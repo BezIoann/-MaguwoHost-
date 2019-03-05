@@ -1,0 +1,92 @@
+.page-header .container {
+    min-height: 147px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font: 300 30px 'Rockwell', sans-serif;
+    color: #202242;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    position: relative;
+
+    span {
+        font-weight: bold;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 32px;
+        background-image: url(../img/pg-logo.png);
+        left: -45px;
+    }
+}
+
+.nav-link {
+    font: 300 16px "Raleway";
+    color: #202242;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        color: $yellow;
+    }
+
+    &:active {
+        color: darken($yellow, 10%);
+    }
+}
+
+.nav-item .active {
+    color: #ffe13e;
+}
+
+.contact {
+    p {
+        font: 600 12px 'Raleway';
+        color: $primText;
+        margin-bottom: 22px;
+    }
+
+    .tell {
+        font-size: 24px;
+        width: 140px;
+        text-align: right;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact-button {
+    background-color: #fff;
+    border: none;
+    font: 600 14px 'Raleway';
+    border-left: 1px solid #babbc4;
+    color: $primText;
+    text-align: center;
+    min-width: 120px;
+    height: 40px;
+
+    &:hover,
+    &:focus {
+        background-color: $yellow;
+        border: none;
+    }
+
+    &:active {
+        background-color: darken($yellow, 10%);
+        border: none;
+    }
+
+
+}
