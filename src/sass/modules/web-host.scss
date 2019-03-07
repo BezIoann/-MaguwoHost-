@@ -1,0 +1,93 @@
+.web-host {
+    background-image: url(../img/Web-bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 986px;
+    background-position-y: -240px;
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.web-host-title {
+    text-align: center;
+    width: 100%;
+
+    h2 {
+        font: 300 48px 'Rockwell', sans-serif;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font: 200 30px 'Raleway', sans-serif;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+}
+
+.web-host-svg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
+
+    svg {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.web-host-domain {
+    display: flex;
+    justify-content: center;
+
+    border: 15px solid rgba($color: #dddddd, $alpha: 0.6);
+
+    button {
+        background-color: $yellow;
+        border: none;
+        font: 700 14px 'Raleway';
+        color: $primText;
+        text-align: left;
+        min-width: 270px;
+        padding: 10px;
+        height: 40px;
+
+        span {
+            margin-left: 100px;
+            color: #fff;
+        }
+    }
+
+    input {
+        min-width: 270px;
+        height: 40px;
+        border: none;
+        padding: 20px;
+        margin: 0;
+        display: block;
+        color: #2d2d2d;
+        font: 300 18px "Raleway", sans-serif;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .web-host-domain {
+        flex-direction: column;
+    }
+
+    .web-host {
+        padding-top: 50px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .web-host-svg {
+        margin-bottom: 60px;
+    }
+}
