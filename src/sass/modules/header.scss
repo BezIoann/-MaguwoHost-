@@ -32,8 +32,17 @@
     flex: 1;
 }
 
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
 .navbar-toggler {
     margin-left: auto;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/iconfinder_menu-alt_134216.svg);
 }
 
 .navbar-toggler {
@@ -42,7 +51,7 @@
 }
 
 .nav-link {
-    font: 300 16px "Raleway";
+    font: 500 16px "Raleway";
     color: #202242;
     text-transform: uppercase;
 
@@ -71,7 +80,10 @@
         font-size: 24px;
         width: 140px;
         text-align: right;
+        margin-left: 20px;
         font-family: 'Lato', sans-serif;
+        border-left: 1px solid #babbc4;
+        background-color: #fff;
     }
 
     .wraper {
@@ -81,27 +93,26 @@
     }
 }
 
-.contact-button {
-    background-color: #fff;
+.live-chat {
+    background-color: darken($yellow, 10%);
     border: none;
-    font: 600 14px 'Raleway';
-    border-left: 1px solid #babbc4;
-    color: $primText;
-    text-align: center;
-    min-width: 120px;
-    height: 40px;
+
 
 
     &:hover,
     &:focus {
-        background-color: $yellow;
-        border: none;
+        background-color: $primText;
+        color: $yellow;
     }
+}
 
-    &:active {
-        background-color: darken($yellow, 10%);
-        border: none;
-    }
+.contact-button {
+    border: none;
+    font: 600 14px 'Raleway';
+    color: $primText;
+    text-align: center;
+    width: 130px;
+    height: 40px;
 }
 
 .contact-wrapper {

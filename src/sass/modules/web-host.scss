@@ -41,25 +41,25 @@
     justify-content: center;
 
     border: 15px solid rgba($color: #dddddd, $alpha: 0.6);
+    width: 51%;
 
     button {
+        width: 100%;
         background-color: $yellow;
         border: none;
+        color: #fff;
         font: 700 14px 'Raleway';
-        color: $primText;
         text-align: left;
-        min-width: 270px;
         padding: 10px;
         height: 40px;
 
-        span {
-            margin-left: 100px;
-            color: #fff;
+        &:hover {
+            background-color: #2d2d2d;
         }
     }
 
     input {
-        min-width: 270px;
+        width: 100%;
         height: 40px;
         border: none;
         padding: 20px;
@@ -70,11 +70,23 @@
     }
 }
 
-@media (max-width: 767.98px) {
-    .web-host-domain {
-        flex-direction: column;
-    }
+.web-host-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color: $yellow;
+}
 
+.web-host-left {
+    width: 52%;
+}
+
+.web-host-right {
+    width: 28%;
+}
+
+@media (max-width:1200px) {
     .web-host {
         padding-top: 50px;
 
@@ -89,5 +101,9 @@
 
     .web-host-svg {
         margin-bottom: 60px;
+    }
+
+    .web-host-domain {
+        width: 100%;
     }
 }
